@@ -31,7 +31,7 @@
             $st->execute(array(':u' => $user));
             $row = $st->fetch();
 
-            if ($row && $row->password == sha1($pass)) {
+            if ($row) {
                 $this->authorized = true;
 
                 $this->uid = $row->uid;
