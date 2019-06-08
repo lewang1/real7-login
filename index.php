@@ -2,7 +2,7 @@
     session_start();
 
     require('class.user.php');
-    $user = new User('mysql:host=localhost;dbname=dev', 'root', 'meep');
+    $user = new User('mysql:host=localhost;dbname=dev', 'memtash', 'meep');
 
 ?>
 
